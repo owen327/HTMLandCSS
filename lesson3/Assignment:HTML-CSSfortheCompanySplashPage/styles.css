@@ -1,0 +1,52 @@
+body {
+  background: #2f2840 url("company_splash_page/bg_body.gif");
+  font-family: Helvetica, Arial, sans-serif;
+}
+main, footer, header {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+main {
+  background: #ffffff;
+  box-sizing: border-box;
+  padding: 24px 110px 50px; 110px;
+}
+header {
+  text-align: center;
+  margin-top: 110px;
+  padding-bottom: 57px;
+}
+h2 {
+  margin-top: 80px;
+  font-size: 36px;
+  color: #45494d;
+}
+h3 {
+  font-size: 24px;
+  color: #3e98b2;
+  margin-bottom: 24px;
+}
+p {
+  font-size: 20px;
+  color: #45494d;
+}
+article {
+  padding-bottom: 50px;
+}
+footer {
+  height: 115px;
+  background: #E7E7E7;
+  margin-bottom: 58px;
+  box-sizing: border-box;
+  padding: 30px 0;
+}
+footer ul {
+  text-decoration: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+footer li {
+  display: inline;
+  padding: 0 63px;
+}
