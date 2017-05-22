@@ -123,7 +123,6 @@
         <div class="box-3">Box-3</div>
       </div>
 
-
       <p>Elements following a floated element will wrap around the floated element, we do not want this to happen, so I applied the 'clear: both' property to the third div, there are 2 other properties for clear, that's the left and the right. I chose to clear both, just to be sure.</p>
 
       <p>There are other methods to clear floats, one of these methods is the clearfix method:</p>
@@ -163,6 +162,8 @@
 
       <p>Notice the blue box on the bottom left side of the page. It is a fixed position element.</p>
 
+      <div class="fixed-box">I'm positioned fixed</div>
+
       <h1>Position Relative</h1>
 
       <p>Positioned relative to its normal position. Setting the offset values will cause the element to move away from its normal position according to the values you've set. However, its position in the normal flow of the document will be preserved and following texts will not wrap around it.</p>
@@ -173,9 +174,7 @@
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cumque repellat sapiente vitae nihil debitis accusamus, odit, tempore id reiciendis consequatur necessitatibus veritatis, distinctio vel, cum repellendus numquam blanditiis perferendis?</p>
 
-
-      <div class="fixed-box">I'm positioned fixed</div>
-
+      <section>
       <h1>Position Absolute</h1>
 
       <div class="wrap">
@@ -184,13 +183,14 @@
 
       <p>When the element is positioned absolute it is taken out of the normal flow and the original space of that element in the document will not be preserved.</p>
 
-      <p>Absolutely positioned elements are moved in relation to their closest relatively positioned parent element. Should a relatively positioned parent element not exist, the absolutely positioned element will be positioned in relation to the body element.</p>
+      <p>Absolutely positioned elements are moved in relation to their closest relatively positioned parent element. Should a relatively positioned parent element not exist, the absolutely positioned element will be positioned in relation to the &lt;body&gt; element.</p>
 
       <p>Let's get some examples:</p>
 
       <p>I will set the position of the section with the class of "pos-absolute" to position: relative so that the absolutely positioned element will be basing its offset values on the whole section element.</p>
 
       <p>Notice the green box beside the Position Absolute title, it is an absolutely positioned element.</p>
+    </section>
     </main>
   </body>
 </html>
