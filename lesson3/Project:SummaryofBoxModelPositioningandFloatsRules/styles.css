@@ -219,7 +219,7 @@ ul li {
   left: 230px;
   box-sizing: border-box;
 }
-.wrap {
+.wrap, section {
   position: relative;
 }
 .fixed-box {
