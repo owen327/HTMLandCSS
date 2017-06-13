@@ -1,0 +1,4 @@
+In solution for ex4.html the id attribute is missing from the select element.
+
+Without this, w3c validator shows the following error message:
+  The for attribute of the label element must refer to a non-hidden form control.
