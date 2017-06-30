@@ -1,0 +1,126 @@
+@import url("../../whitespaces-reset.css");
+
+body {
+  padding-top: 75px;
+  font: normal 20px "Avenir", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #45494d;
+  background: #2f2840 url("images/bg_body.gif") 50% 0 repeat;
+}
+
+header h1 { padding-bottom: 75px; }
+
+nav {
+  padding: 25px 0 60px 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+nav li {
+  display: inline;
+  padding: 0 42px;
+}
+
+nav a {
+  color: #cacaca;
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #6db9ff;
+}
+
+main {
+  padding: 100px 0 0 0;
+  background: #ffffff;
+}
+
+h2 {
+  padding: 0 0 40px 0;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h2:before,
+h2:after {
+  display: inline-block;
+  padding: 0 24px;
+  content: "\2022";
+  font-size: 22px;
+  vertical-align: 5px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #3e59b2;
+  padding: 0 0 20px 0;
+}
+
+article { padding: 0 110px 100px 110px; }
+
+.column {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+footer {
+  background: #e7e7e7;
+  padding: 75px 0;
+  color: #b2b2b2;
+}
+
+footer p { padding: 0 0 40px 0; }
+
+footer li {
+  display: inline-block;
+  padding: 0 62px;
+}
+
+footer li a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+footer li a.facebook { background-position: 0 -46px; }
+footer li a.email { background-position: 0 -92px; }
+footer li a.instagram { background-position: 0 100%; }
+#projects article { padding: 0 0 50px 0; }
+#projects figure {
+  padding: 0 30px 20px 30px;
+  margin: 0;
+}
+#projects img{
+  display: block;
+  width: 100%;
+}
+#projects article p {
+  padding: 0 110px;
+  margin: 0;
+}
+#projects article { padding: 0 0 50px 0; }
+#projects article + article { padding-top: 60px; }
+
+#team li a {
+  text-decoration: none;
+  color: #3e59b2;
+}
+
+#team article { padding: 0 0 225px 0; }
+
+#team p { padding: 0 110px 100px 110px; }
+
+#team li {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 24px;
+}
+
+#team li img {
+  display: block;
+  margin: 0 0 20px 0;
+}
