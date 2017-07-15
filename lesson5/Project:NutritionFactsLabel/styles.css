@@ -1,49 +1,43 @@
-html, body {
+@import url("../../whitespaces-reset.css");
+
+body {
+  margin: 8px;
+}
+body, html {
   font: normal 28px Helvetica, Arial, sans-serif;
 }
+
 article {
-  border: 2px solid #000;
+  border: 2px solid;
   width: 680px;
   box-sizing: border-box;
   padding: 10px 15px 15px 15px;
 }
-h1 {
+
+header h1 {
   font-size: 56px;
-  margin: 0;
-}
-p {
-  margin: 0;
-}
-h2 {
-  margin: 0;
-  font-size: 28px;
-  font-weight: bold;
 }
 header h2 {
-  margin-top: 5px;
   border-top: 30px solid;
   border-bottom: 1px solid;
+  margin-top: 5px;
   padding: 10px 0;
 }
+header dt, header dd {
+  display: inline;
+}
+
 header dl {
   width: 50%;
   display: inline-block;
-  margin: 0;
   padding: 5px 0;
 }
-header dl dt {
-  display: inline;
+
+header dl:first-of-type dt {
   font-weight: bold;
-}
-header dl dd {
-  display: inline;
-  margin: 0;
 }
 header dl + dl {
   text-align: right;
-}
-header dl + dl dt {
-  font-weight: normal;
 }
 header {
   border-bottom: 15px solid;
@@ -52,86 +46,70 @@ header {
 table {
   width: 100%;
   border-collapse: collapse;
+  border-spacing: 0;
 }
 table thead th {
   text-align: right;
-  font-weight: bold;
 }
 sup {
   vertical-align: 3px;
 }
-dt {
+dt, dd {
   display: inline;
 }
 dd {
-  display: inline;
   font-weight: normal;
-  margin: 0;
 }
-dl {
-  margin: 0;
-}
-tbody td:last-of-type {
-  text-align: right;
-  font-weight: bold;
-  padding: 2px 0;
-}
-tbody th {
+tbody th, tbody td {
   text-align: left;
   border-top: 1px solid;
   padding: 2px 0;
 }
-tbody td {
+
+tbody td:last-of-type {
+  text-align: right;
+  font-weight: bold;
   border-top: 1px solid;
   padding: 2px 0;
-  box-sizing: border-box;
 }
-tr > td:first-child {
-  margin-left: 1rem;
-  display: block;
+tbody td:first-child:empty {
+  width: 1rem;
+  border-top: 0;
 }
-tbody + tbody tr:first-of-type th,
-tbody + tbody tr:first-of-type td{
+tbody + tbody tr:first-of-type td {
   border-top: 20px solid;
 }
-tbody + tbody tr th {
+
+tbody + tbody td:last-child {
   font-weight: normal;
 }
-tbody + tbody td:last-of-type {
-  font-weight: normal;
-}
-tfoot td:last-of-type {
-  display: table-cell;
-  margin-left: 0;
-  padding: .5rem 0 .5rem 0.7rem;
+tfoot td {
+  padding: .5rem 0 .5rem .7rem;
   font-size: .9rem;
   font-weight: normal;
   text-align: left;
   text-indent: -.7rem;
-  border-top: 1px solid #000000;
-}
-table + table {
-  font-size: .8em;
-}
-table + table th {
-  font-weight: normal;
-  border-bottom: 1px solid;
-  text-align: left;
-}
-table + table td {
-  border-top: 0;
-}
-table + table td:first-of-type {
-  margin: 0;
-  display: table-cell;
-}
-table + table td:last-of-type {
-  font-weight: normal;
-  text-align: left;
+  border-top: 1px solid
 }
 
-table + table tr th:first-of-type { width: 33px; }
-table + table tr th:nth-child(2) { width: 208px; }
-table + table tr th:nth-child(3) { width: 136px; }
-table + table tr th:nth-child(4),
-table + table tr th:nth-child(5) { width: 135px; }
+table + table {
+  font-size: 0.8rem;
+}
+table + table th,
+table + table td:last-child {
+  text-align: left;
+  font-weight: normal;
+  border: 0;
+}
+table + table th {
+  border-top: 0;
+  border-bottom: 1px solid;
+}
+table + table td {
+  border: 0;
+}
+table + table td.indent { text-indent: 1.2rem }
+table + table tr th:first-child { width: 37% }
+table + table tr th:nth-child(2),
+table + table tr th:nth-child(3),
+table + table tr th:nth-child(4) { width: 21%; }
